@@ -9,6 +9,9 @@ public class Counter {
         HashMap<String, Integer> map = new HashMap<>();
 
         for (String word : text.split(" ")) {
+            if (word.length() == 0) {
+                continue;
+            }
             if (!map.containsKey(word)) {
                 map.put(word, 0);
             }
