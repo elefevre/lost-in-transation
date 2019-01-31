@@ -3,19 +3,21 @@ package org.wordcount;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.*;
-import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.joining;
 
 public class Counter {
 
     public static void main(String[] argv) throws IOException {
-        String filename = argv[0];
+        String text = readTextFromFile(argv[0]);
 
+        Map<String, Integer> results = new Counter().countWordFrequencies(text);
+
+        displayTopWords(results);
+    }
+
+    private static String readTextFromFile(String filename) throws IOException {
         String text;
 
         BufferedReader br = new BufferedReader(new FileReader(filename));
@@ -32,10 +34,11 @@ public class Counter {
         } finally {
             br.close();
         }
+        return text;
+    }
 
-        Map<String, Integer> results = new Counter().countOccurrences(text);
+    private static void displayTopWords(Map<String, Integer> results) {
         List<Map.Entry<String, Integer>> list = new ArrayList<>(results.entrySet());
-
         Collections.sort(list, new Comparator<Map.Entry<String, Integer>>() {
             @Override
             public int compare(Map.Entry<String, Integer> o1, Map.Entry<String, Integer> o2) {
@@ -51,10 +54,9 @@ public class Counter {
                 break;
             }
         }
-
     }
 
-    public Map<String, Integer> countOccurrences(String text) {
+    public Map<String, Integer> countWordFrequencies(String text) {
         HashMap<String, Integer> map = new HashMap<>();
 
         for (String word : text.split(" ")) {
