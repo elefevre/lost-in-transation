@@ -23,7 +23,7 @@ How to contribute
 -----------------
 If you are interested in contributing an implementation, please provide a Pull Request that introduces a new directory, with a appropriate name, containing a single implementation.
 
-The implementation should be runnable with minimum efforts. Make sure to include some instructions for executing the code.
+The implementation should be runnable with minimum efforts. Make sure to include instructions for executing the code.
 
 If the implementation requires libraries or other additional files, please include them, their license permitting.
 
@@ -33,7 +33,7 @@ We are implementing a basic word counter. Specifically, given a text file as inp
 
 The output
 ----------
-A sample text file is provided at the root of the repository. For sake of simplicity, it has already be cleaned and normalized, so that all punctuation marks have been replaced with blank spaces, and all remaining words are in lower case. Also, stop words have been removed.
+A sample text file (Pride and Prejudice, by Jane Austen, as made available by the [Project Gutenberg](http://www.gutenberg.org/ebooks/42671)) is provided at the root of the repository. For sake of simplicity, it has already been simplified and normalized, so that all punctuation marks have been replaced with blank spaces, and all remaining words are in lower case. Also, stop words have been removed.
 
 Here a possible output, based on the provided sample file. However, implementations should use whichever display makes most sense to the implementor.
 ```
