@@ -5,11 +5,13 @@ The project
 -----------
 The objective is to explore various programming styles.
 
-The idea is to invite contributors to implement the same programming task in various ways, in many different programming languages. It is also expected that there will be several implementations in the same language. Possibly, different implementors with different backgrounds will provide differing implementations in the same language, even with the same initial intentions.
+The idea is to invite contributors to implement the same programming task in various ways, in many different programming languages. Those programs will all be translations of one another.
+
+I am hoping there will be several implementations in the same language. Hopefully, different implementors with different backgrounds will provide differing implementations in the same language, even with the same initial intentions.
 
 The why
 -------
-I was inspired by [Le Ton beau de Marot: In Praise of the Music of Language](https://en.wikipedia.org/wiki/Le_Ton_beau_de_Marot), a book where Douglas Hofstadter compares various translations of a short French poem. There are many possible translations and Hofstadter himself comes with several of them.
+Inspiration came from [Le Ton beau de Marot: In Praise of the Music of Language](https://en.wikipedia.org/wiki/Le_Ton_beau_de_Marot), a book where Douglas Hofstadter compares various translations of a short French poem. There are many possible translations and Hofstadter himself comes with several of them.
 
 Each translation of the poem has its own flavor. Some are more faithful than others. Some take liberties in the content to be closer to the spirit of the original poem.
 
@@ -25,11 +27,11 @@ If you are interested in contributing an implementation, please provide a Pull R
 
 The implementation should be runnable with minimum efforts. Make sure to include instructions for executing the code.
 
-If the implementation requires libraries or other additional files, please include them, their license permitting.
+If the implementation requires libraries or other additional files, please include them as well, license permitting.
 
 The task
 --------
-We are implementing a basic word counter. Specifically, given a text file as input, we want the top 25 most frequent words.
+We are implementing a basic word counter. More specifically, given a text file as input, we want the top 25 most frequent words.
 
 The output
 ----------
