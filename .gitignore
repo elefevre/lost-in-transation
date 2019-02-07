@@ -17,3 +17,7 @@
 
 # Java
 *.class
+
+# Mac OS
+.DS_Store
+
