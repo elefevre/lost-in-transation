@@ -11,6 +11,6 @@ How to run
 1. Install the Java Development Kit 8 or higher
 1. Run the following commands
 ```
-java src/org/wordcount/Counter.class
+javac src/org/wordcount/Counter.java
 java -cp src org.wordcount.Counter ../pride-and-prejudice.txt
 ```
