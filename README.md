@@ -7,6 +7,10 @@ The objective is to explore various programming styles.
 
 Contributors are invited to re-implement [an existing program](java_plain_old) in any language or style they wish.
 
+This approach is slightly different from other projects such as [Rosetta Stone](http://www.rosettacode.org/), [The Hello World Collection](http://helloworldcollection.de/) or [99 Bottles of Beer](http://www.99-bottles-of-beer.net/). In those, the specifications are given before hand and people provide implementations without consideration for the existing code.
+
+In this project, I want to see how a piece of code is interpreted and re-imagined by other people.
+
 The task
 --------
 We are implementing a basic word counter. The exercise is to translate the [existing code](java_plain_old), so no specs are provided. Read the code and interpret it the way you see fit.
