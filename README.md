@@ -5,7 +5,7 @@ The project
 -----------
 The objective is to explore various programming styles.
 
-Contributors are invited to re-implement [an existing program](java_plain_old) in various other languages, or using other styles, as they see fit.
+Contributors are invited to re-implement [an existing program](java_plain_old) in any language or style they wish.
 
 The task
 --------
@@ -15,11 +15,11 @@ I have included a sample text file (Pride and Prejudice, by Jane Austen, from th
 
 How to contribute
 -----------------
-If you are interested in contributing a translation to the [code](java_plain_old), please provide a Pull Request that introduces a new directory, with a appropriate name, containing a single implementation.
+If you are interested in contributing a translation to the [code](java_plain_old), please fork the repository and introduce a new directory with a appropriate name, containing a single implementation. Feel free to provide multiple implementations in separate directories.
 
-The implementation should be runnable with minimal effort. Please include instructions for executing the code.
+The implementation should be runnable with minimal effort. Please include instructions for executing the code, as well as any libraries or other additional files necessary to compile and run.
 
-If the implementation requires libraries or other additional files, please include them as well, license permitting.
+Once done, please drop me a note with a link to your repository. A Pull Request is also fine, although I probably won't merge it, as I'd like to refrain people from reading alternative implementations before they get to coding.
 
 The why
 -------
