@@ -13,7 +13,6 @@ fn main() -> std::io::Result<()> {
     for l in lines {
         let words = l.split_whitespace();
         for w in words {
-            println!("{}", w);
             let val = match freqs.get(&w.to_string()) {
                 Some(c) => c+1,
                 None => 1,
@@ -21,6 +20,10 @@ fn main() -> std::io::Result<()> {
             freqs.insert(w.to_string(), val);
         }
     }
-    println!("{:?}", freqs);
+    let mut counts: Vec<_> = freqs.iter().collect();
+    counts.sort_by(|a, b| b.1.cmp(a.1)); // compare by count value
+    for (w, c) in counts.iter().take(25) {
+        println!("{}:{}", w, c);
+    }
     Ok(())
 }
