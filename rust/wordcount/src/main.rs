@@ -2,9 +2,16 @@ use std::collections::HashMap;
 use std::fs::File;
 use std::io::BufReader;
 use std::io::prelude::*;
+use std::env;
 
 fn main() -> std::io::Result<()> {
-    let file = File::open("../../pride-and-prejudice.txt")?;
+    let args: Vec<_> = env::args().collect();
+    if args.len() != 2 {
+        eprintln!("usage: {} filename", args[0]);
+        return Result::Err(std::io::Error::new(std::io::ErrorKind::Other, ""))
+    }
+
+    let file = File::open(&args[1])?;
     let buf_reader = BufReader::new(file);
     let lines = buf_reader.lines().map(|l| l.unwrap());
 
